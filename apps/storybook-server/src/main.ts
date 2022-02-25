@@ -15,7 +15,7 @@ app.get('/petstore/?*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'petstore', 'index.html'));
 });
 
-const port = process.env.port || 8080;
+const port = process.env.PORT || 8080;
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/`);
 });
