@@ -6,16 +6,24 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
+        "baseHref": "/petstore/",
         "outputPath": "dist/apps/petstore",
         "index": "apps/petstore/src/index.html",
         "main": "apps/petstore/src/main.ts",
         "polyfills": "apps/petstore/src/polyfills.ts",
         "tsConfig": "apps/petstore/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/petstore/src/favicon.ico", "apps/petstore/src/assets"],
-        "styles": ["apps/petstore/src/styles.scss"],
+        "assets": [
+          "apps/petstore/src/favicon.ico",
+          "apps/petstore/src/assets"
+        ],
+        "styles": [
+          "apps/petstore/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -80,7 +88,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/petstore"],
+      "outputs": [
+        "coverage/apps/petstore"
+      ],
       "options": {
         "jestConfig": "apps/petstore/jest.config.js",
         "passWithNoTests": true

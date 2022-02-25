@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "petstore": "apps/petstore",
-    "petstore-e2e": "apps/petstore-e2e"
+    "petstore-e2e": "apps/petstore-e2e",
+    "storybook-server": "apps/storybook-server"
   }
 }
