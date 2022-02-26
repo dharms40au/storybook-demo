@@ -3,6 +3,8 @@
   "projects": {
     "petstore": "apps/petstore",
     "petstore-e2e": "apps/petstore-e2e",
-    "storybook-server": "apps/storybook-server"
+    "storybook-server": "apps/storybook-server",
+    "ui": "libs/ui",
+    "ui-e2e": "apps/ui-e2e"
   }
 }

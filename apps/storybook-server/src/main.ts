@@ -8,12 +8,7 @@ import * as path from 'path';
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '..')));
-
-app.get('/petstore/?*', (req, res) => {
-  // res.send({ message: 'Welcome to storybook-server!' });
-  res.sendFile(path.join(__dirname, '..', 'petstore', 'index.html'));
-});
+app.use(express.static(path.join(__dirname, '..', '..', 'storybook', 'ui')));
 
 const port = process.env.PORT || 8080;
 const server = app.listen(port, () => {
